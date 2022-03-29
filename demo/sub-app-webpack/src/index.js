@@ -1,5 +1,8 @@
 import addContent from './add-content';
-//  import './index.css';
+import './index.css';
 
-document.write('My first Webpack app.<br />');
-addContent();
+window.onload = function() {
+  addContent();
+
+  console.log('---===hello world===---');
+}

@@ -10,6 +10,8 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "main-app.js",
+    library: 'mainAppLib',
+    libraryTarget: 'umd',
   },
   resolve: {
     extensions: ['.js', '.jsx'],

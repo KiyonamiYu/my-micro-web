@@ -1,3 +1,6 @@
 export default function() {
-    document.write('Hello world');
+  const rootDiv = document.getElementById('root');
+  if (rootDiv) {
+    rootDiv.append('My first Webpack app');
+  }
 }
