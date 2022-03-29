@@ -74,7 +74,7 @@ module.exports = {
     headers: { "Access-Control-Allow-Origin": "*" },
     // contentBase: path.join(__dirname, "dist"),
     compress: true,
-    port: 9003,
+    port: 9000,
     historyApiFallback: true,
     hot: true,
   },
