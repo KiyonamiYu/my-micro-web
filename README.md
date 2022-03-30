@@ -1,5 +1,8 @@
 # my-micro-web-demo
 
+1. webpack 编译（umd 打包、子应用 dev 服务启动配置）；
+2. 子应用添加生命周期，在 mount 中调用 render 函数；
+
 ## 记录
 
 ### 模块化——umd

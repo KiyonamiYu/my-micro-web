@@ -1,23 +1,13 @@
-import React from 'react';
-import logo from './logo.svg';
-import './index.css';
+import React from "react";
+import { Layout, Button } from "antd";
+import 'antd/dist/antd.css'; // TODO 去掉 antd 的全局样式引入
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Layout>
+      <Layout.Header>Header</Layout.Header>
+      <Layout.Content><Button type="primary">测试按钮</Button></Layout.Content>
+      <Layout.Footer>Footer</Layout.Footer>
+    </Layout>
   );
 }
-
-export default App;
