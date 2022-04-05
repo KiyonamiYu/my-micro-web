@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "outDir": "./lib/", // 无用，最终打包文件听命与 webpack.config.output；如果不写，tsconfig.json 会飘红而已；
+    "noImplicitAny": true,
+    "module": "es6",
+    "target": "es5",
+    "jsx": "react",
+    "allowJs": true,
+    "moduleResolution": "node"
+  }
+}
