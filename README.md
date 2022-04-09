@@ -12,10 +12,15 @@
 3. 通过 location.pathname 获取当前路由的 app；
 4. 主应用生命周期注册；
 5. 微应用生命周期注册，并处理微应用切换生命周期调用（拿到当前应用信息）；
-6. 使用 fetch.get 请求微应用，和解析 html 和 js；
-
+6. 使用 fetch.get 跨域请求微应用，并解析 html、css、js，渲染到容器中；
 
 ## 记录
+
+### 启动项目
+
+1. `my-micro-fe`目录下`npm run dev`，修改后实时编译最新结果；
+2. `main-app`目录下`sudo npm link my-micro-fe`，再`npm run dev`启动项目；
+3. `npm run dev`启动其他子应用；
 
 ### History的pushState和replaceState用法
 

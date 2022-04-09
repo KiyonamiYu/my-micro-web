@@ -23,7 +23,6 @@ export default function App() {
       </Layout.Header>
       <Layout.Content>
         <div id="micro-container">
-          hello world
         </div>
       </Layout.Content>
       <Layout.Footer style={{ textAlign: "center" }}>

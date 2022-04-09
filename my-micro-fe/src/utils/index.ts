@@ -1,5 +1,5 @@
-import { getCurrentApp } from "../const/current-app";
-import { getMicroApps } from "../const/micro-apps";
+import { getCurrentApp } from "../const/currentApp";
+import { getMicroApps } from "../const/microApps";
 import { RegistrableApp } from "../types";
 
 /**

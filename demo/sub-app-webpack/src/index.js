@@ -2,10 +2,8 @@ import addContent from './add-content';
 import './index.css';
 
 const render = () => {
-  window.onload = function() {
     addContent();
     console.log('---===hello world===---');
-  }
 }
 
 // 非微前端架构，直接执行

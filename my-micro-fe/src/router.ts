@@ -1,4 +1,6 @@
-import { isPathnameChanged } from "./utils";
+import { setCurrentApp } from "./const/currentApp";
+import { htmlLoader } from "./htmlLoader";
+import { getCurrentAppAfterFiltering, isPathnameChanged } from "./utils";
 
 type HistoryChangeState = typeof history.pushState;
 
@@ -6,7 +8,12 @@ const turnApp = () => {
   if (!isPathnameChanged()) {
     return;
   }
-  console.log("turnApp");
+  const currentApp = getCurrentAppAfterFiltering();
+  setCurrentApp(currentApp);
+  console.log("turnApp", currentApp);
+  if (currentApp != null) {
+    htmlLoader(currentApp);
+  }
 };
 
 // 除了改变 url，还要发送自定义事件

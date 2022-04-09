@@ -1,7 +1,7 @@
 export interface RegistrableApp {
   name: string;
   entry: string;
-  constainer: string;
+  container: string;
   activeRule: string;
 }
 
